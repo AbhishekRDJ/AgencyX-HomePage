@@ -1,0 +1,10 @@
+.Header {
+    background-color: #f2f0f4;
+}
+
+.internal_header {
+    border-radius: 20px;
+    padding: 20px;
+    gap: 0.5rem;
+    font-weight: 600;
+}
