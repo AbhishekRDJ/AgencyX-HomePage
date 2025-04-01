@@ -4,17 +4,14 @@ import Logo from "../logo/logo"; // Import the Logo component
 import Button from "./Header_btn";
 
 const Header = () => {
-  // Add state to track the active navigation item
   const [activeNav, setActiveNav] = useState("home");
-  // State for language dropdown
+ 
   const [showLanguages, setShowLanguages] = useState(false);
 
-  // Function to handle navigation clicks
   const handleNavClick = (navItem) => {
     setActiveNav(navItem);
   };
 
-  // Toggle language dropdown
   const toggleLanguageDropdown = () => {
     setShowLanguages(!showLanguages);
   };
@@ -30,7 +27,6 @@ const Header = () => {
         <Logo/>
       </div>
 
-      {/* Navigation */}
       <nav className="flex items-center space-x-4 bg-white bg-opacity-50 shadow-md backdrop-blur-md px-6 py-4 rounded- internal_header">
         <a 
           href="#demos" 
@@ -81,9 +77,8 @@ const Header = () => {
         </a>
       </nav>
 
-      {/* Action Buttons */}
       <div className="flex items-center space-x-2">
-        {/* Dark Mode Toggle Button */}
+        
         <button 
           className="flex justify-center items-center bg-gray-100 hover:bg-gray-200 rounded-full focus:outline-none w-10 h-10 transition-all"
           aria-label="Toggle dark mode"

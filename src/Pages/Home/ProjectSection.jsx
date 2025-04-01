@@ -6,16 +6,15 @@ const ProjectHeroSection = () => {
   return (
     <>
     <div className="relative flex justify-center items-center p-6 w-full min-h-screen" style={{ backgroundColor: '#0c1b44', borderRadius: '50px' ,width: '99%',marginLeft:"10px"}}>
-      {/* Dark blue background with gradient */}
+     
       <div className="absolute inset-0" style={{ 
         background: 'linear-gradient(to bottom, #091636, #0c1b44)',
         borderRadius: '50px',
         
       }}></div>
       
-      {/* Content container */}
       <div className="z-10 relative mx-auto w-full max-w-6xl" style={{ borderRadius: '50px' }}>
-        {/* Navigation button */}
+        
         <div className="mb-12">
           <button style={{ 
             border: '1px solid rgba(255, 255, 255, 0.2)', 
@@ -32,7 +31,7 @@ const ProjectHeroSection = () => {
           </button>
         </div>
         
-        {/* Main heading */}
+        
         <div className="md:text-left text-center" style={{ textAlign: 'left' }}>
           <h1 style={{ 
             color: 'white', 
@@ -51,7 +50,7 @@ const ProjectHeroSection = () => {
       </div>
       
       
-      {/* Scroll up button (positioned at bottom right) */}
+      
       <button className="absolute" style={{ 
         bottom: '1.5rem', 
         right: '1.5rem', 

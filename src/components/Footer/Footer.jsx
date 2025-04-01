@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // For smooth animations
+import { motion } from 'framer-motion'; 
 
-// Reusable Navigation Links Component
 const NavLinks = ({ links }) => (
   <div className="space-y-4">
     {links.map((link, index) => (
@@ -107,7 +106,6 @@ const Footer = () => {
 
           <hr className="border-gray-700" />
 
-          {/* Navigation Links */}
           <div className="gap-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             {navLinks.map((link) => (
               <NavLinks key={link.label} links={[link]} />
@@ -155,7 +153,6 @@ const Footer = () => {
         </button>
       </motion.div>
 
-      {/* Copyright and Social Media Links Section - Added based on the image */}
       <div className="mt-12 pt-6 border-gray-700 border-t">
         <div className="flex md:flex-row flex-col justify-between items-center mx-auto max-w-7xl">
           <div className="mb-4 md:mb-0">

@@ -7,7 +7,7 @@ const LeadershipSection = () => {
     <>
     <div className="bg-[#f2f1f6] px-6 py-24">
       <div className="flex md:flex-row flex-col justify-between items-center mx-auto max-w-7xl">
-        {/* Badge Section */}
+        
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -20,7 +20,6 @@ const LeadershipSection = () => {
           </div>
         </motion.div>
 
-        {/* Heading Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +34,6 @@ const LeadershipSection = () => {
           </h2>
         </motion.div>
 
-        {/* Description Section */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -48,7 +46,6 @@ const LeadershipSection = () => {
         </motion.div>
       </div>
 
-      {/* Button Section */}
       </div>
     <TeamMembersGrid/>
       </>

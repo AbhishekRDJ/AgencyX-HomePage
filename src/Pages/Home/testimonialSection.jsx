@@ -32,11 +32,11 @@ const TestimonialSection = () => {
   
   return (
     <div className="relative shadow-lg mx-auto px-4 md:px-8 py-16 rounded-t-xl rounded-b-xl w-370 overflow-hidden">
-      {/* Purple gradient decoration on right side */}
+      
       <div className="top-0 right-0 absolute bg-gradient-to-l from-purple-300 to-transparent opacity-80 w-1/4 h-full" />
       
       <div className="relative mx-auto max-w-4xl">
-        {/* Hear from customer button */}
+       
         <div className="flex justify-center mb-12">
           <button className="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full text-gray-800">
             <span className="bg-blue-500 rounded-full w-2 h-2"></span>
@@ -44,13 +44,11 @@ const TestimonialSection = () => {
           </button>
         </div>
         
-        {/* Testimonial quote */}
         <div className="text-center">
           <h2 className="mb-12 font-bold text-gray-900 text-4xl md:text-5xl lg:text-6xl">
             "{testimonials[activeIndex].quote}"
           </h2>
           
-          {/* Author info */}
           <div className="flex justify-center items-center space-x-2 text-gray-700">
             <p className="font-semibold">{testimonials[activeIndex].author}</p>
             <span>•</span>
@@ -58,7 +56,6 @@ const TestimonialSection = () => {
           </div>
         </div>
         
-        {/* Navigation dots */}
         <div className="flex justify-center space-x-2 mt-10">
           {testimonials.map((_, index) => (
             <button 
@@ -72,7 +69,6 @@ const TestimonialSection = () => {
           ))}
         </div>
         
-        {/* Up arrow at bottom */}
         <div className="flex justify-end mt-8">
           
         </div>

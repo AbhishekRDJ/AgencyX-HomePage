@@ -11,7 +11,6 @@ const MobileAppsSection = () => {
     setActiveCategory(category);
   };
 
-  // App data with their categories
   const apps = [
     {
       id: 1,
@@ -75,7 +74,6 @@ const MobileAppsSection = () => {
     }
   ];
 
-  // Filter apps based on active category
   const filteredApps = activeCategory === 'All' 
     ? apps 
     : apps.filter(app => app.category === activeCategory);
@@ -109,14 +107,12 @@ const MobileAppsSection = () => {
     ))}
   </div>
 
-  {/* App cards container */}
   <div className="flex flex-wrap justify-center gap-6 mx-auto w-full max-w-screen-2xl">
   {filteredApps.map((app) => (
     <div
       key={app.id}
       className="flex flex-col bg-white shadow-md rounded-xl w-full sm:min-w-[300px] overflow-hidden md:basis-[calc(33.333%-1.5rem)] lg:basis-[calc(33.333%-1.5rem)]"
     >
-      {/* Card header with gradient */}
       <div className={`h-20 w-full bg-gradient-to-r ${app.bgGradient}`}></div>
 
       {/* Card content */}
@@ -132,7 +128,6 @@ const MobileAppsSection = () => {
           </div>
           <p className="flex-grow mt-2 text-gray-600 text-sm">{app.description}</p>
 
-          {/* Ratings and downloads */}
           <div className="flex justify-between items-center mt-4">
             <div className="flex items-center gap-1">
               <Star className="fill-yellow-400 w-4 h-4 text-yellow-400" />
@@ -145,7 +140,6 @@ const MobileAppsSection = () => {
             </a>
           </div>
 
-          {/* Download buttons */}
           <div className="flex justify-between gap-4 mt-4">
             <button className="flex justify-center items-center gap-0 bg-gray-900 px-15 py-2 rounded-md text-white">
               <Smartphone className="w-10 h-4" />
